@@ -11,6 +11,13 @@ type StringStruct struct {
 	Len  int
 }
 
+type MapStruct struct {
+	count      int
+	B          uint8
+	buckets    unsafe.Pointer
+	oldbuckets unsafe.Pointer
+}
+
 func main() {
 	s := "Hello, Мир"
 
