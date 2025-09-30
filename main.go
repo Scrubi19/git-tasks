@@ -11,6 +11,12 @@ type StringStruct struct {
 	Len  int
 }
 
+type SliceStruct struct {
+	data unsafe.Pointer
+	Size int
+	Cap  int
+}
+
 func main() {
 	s := "Hello, Мир"
 
